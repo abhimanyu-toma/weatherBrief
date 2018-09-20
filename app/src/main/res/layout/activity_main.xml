@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/trees"
+    tools:context="com.abhimanyutomar.weatherbrief.MainActivity">
+
+    <AutoCompleteTextView
+        android:id="@+id/actv"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:alpha="0.8"
+        android:background="#a57f7f"
+        android:fontFamily="cursive"
+        android:hint="Enter City Name"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:textColorHighlight="@android:color/background_dark"
+        android:textColorHint="@android:color/background_light"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/actv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:alpha="0.8"
+        android:background="#94b654"
+        android:fontFamily="@font/alegreya_bold_italic"
+        android:onClick="getData"
+        android:text="GET "
+        android:textColor="#d25a53"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="43dp"
+        android:alpha="0.8"
+        android:background="#a57f7f"
+        android:ems="10"
+        android:focusable="false"
+        android:fontFamily="cursive"
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textColorHighlight="@android:color/background_dark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText3"
+        android:alpha="0.8"
+        android:background="#a57f7f"
+        android:ems="10"
+        android:focusable="false"
+        android:fontFamily="cursive"
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textColorHighlight="@android:color/background_dark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
